@@ -158,3 +158,9 @@ Remember that each BioMart query consists of 4 steps:
 
 - Recent Presentations and Worked examples  
   ftp://ftp.sanger.ac.uk/pub/resources/coursesandconferences/
+    
+- Worked example Human                             
+  ftp://ftp.sanger.ac.uk/pub/resources/coursesandconferences/Mammalian_2016/Browsers_2016.pdf
+  
+- Variation in Human  
+  ftp://ftp.sanger.ac.uk/pub/resources/coursesandconferences/Mammalian_2016/Variation_2016.pdf
