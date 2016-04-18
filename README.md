@@ -19,28 +19,26 @@ Genome viewers | IGV & co | Heidi
 Visualization in a circular layout | circos, OmicCircos | Heidi
   
   
-Heidi's parts: [Presentation](URPP_Tutorial_GenomicVisual_HL.pdf) | [Exercises](Exercises_GenomicVisualiz_HL.pdf)  
+Heidi's material: [Presentation](URPP_Tutorial_GenomicVisual_HL.pdf) | [Exercises](Exercises_GenomicVisualiz_HL.pdf)  
   
 Stefan's [presentation](URPP_Tutorial_GenomicVisual_SW.pdf)  
   
   
 ### Ensembl
 - hub of reference and baseline data
-- construct annotation (also manual)
+- produces gene annotation (also manual)
 - all data public
 - 4-5 updates (versions/freezes) a year
-- archived version
+- archived versions
   
   
 ### 4 types of resources:  
 1. gene annotation 
 2. variation resources 
 3. regulatory resources
-4. comparative genomics resources  
-  orthology
-  whole-genome alignments  
+4. comparative genomics resources (orthology / whole-genome alignments)    
   
-  
+    
 ### Ensembl Tools
 
 Name | Description
@@ -63,6 +61,10 @@ ID History converter | Convert a set of Ensembl IDs from a previous release into
 **Tutorials / Courses**    
 - [Tutorials](http://www.ensembl.org/info/website/tutorials/index.html)
 - [Online Course (7hrs)](http://www.ebi.ac.uk/training/online/course/ensembl-browser-webinar-series-2016)
+- [Ensembl Youtube channnel](https://www.youtube.com/user/EnsemblHelpdesk)
+
+**Cheatsheets**  
+- [Reference Card](Ensembl_quick_reference_card.pdf)  
   
 **More info**  
 - [Ensembl Roadmap](http://www.ensembl.info/roadmap/)
@@ -74,27 +76,13 @@ ID History converter | Convert a set of Ensembl IDs from a previous release into
 
 1. Find your favorite organism
 
-Go to http://ensemblgenomes.org and try to find the ensembl entry page of your favorite species. If your favorite species is not 
-in ensembl go to you related species.
+  Go to http://ensemblgenomes.org and try to find the ensembl entry page of your favorite species. If your favorite species is not 
+  in ensembl go to you related species.
 
-2. Find 
+2. Go through one of the worked example (either [Human](worked_example_Human.pdf) or [Arabidopsis](workedExample_Arabidopsis.pdf) )
 
-Go to the Ensembl homepage (http://www.ensembl.org/) and select the mouse and search for the gene "ABCD1".
-  
-The search result shows an ABCD1 gene and several transcripts (splice variants).  
-  
-Click on ‘ABCD1 (Mouse Gene)’ (the first hit)
-  
-This leads us to the ‘Gene summary’ page under the ‘Gene’ tab.
-  
-**The Gene tab**  
-  
-Pages (also called ‘views’) in Ensembl are organised under a number of tabs, i.e. ‘Species’, ‘Location’, ‘Gene’, ‘Transcript’, ‘Variation’ and ‘Regulation’. The various available pages under each tab are listed in the left-hand side menu.
-
-
-3. 
-http://www.ensembl.org/Ovis_aries/Gene/Summary?db=core;g=ENSOARG00000007049;r=X:77653929-77668081;t=ENSOART00000007672
-
+  Pages (also called ‘views’) in Ensembl are organised under a number of tabs, i.e. ‘Species’, ‘Location’, ‘Gene’, ‘Transcript’, 
+  ‘Variation’ and ‘Regulation’. The various available pages under each tab are listed in the left-hand side menu.
 
 
 ### BioMart 'Data Mining'
@@ -106,23 +94,25 @@ Remember that each BioMart query consists of 4 steps:
   4. Results: table / sequences  
 
 
+#### Exercises using Ensembl Plants
+
 1. Get description for a gene list / Convert IDs
 
   The gene list we use here is a list of significantly up-regulated genes in the met1 background in Arabidopsis thaliana defective in methylation maintenance (PMID:18423832).
 (obtained from Table S2 from the publication [PMID:23146178](http://onlinelibrary.wiley.com/doi/10.1111/tpj.12070/abstract) 
 
-  - Download gene list
-  wget https://raw.githubusercontent.com/milchmolch/BIO634_NGS2_2015/master/GENE_LISTS/Lister_met1_up.txt
+  - Download gene list (from browser or using `wget`) 
+  https://raw.githubusercontent.com/milchmolch/BIO634_NGS2_2015/master/GENE_LISTS/Lister_met1_up.txt
 
   - Go to EnsemblPlants http://plants.ensembl.org and Start BioMart
 
-  - Select in **Dataset**: <Arabidopsis thaliana (TAIR10)
+  - Select in **Dataset**: 'Arabidopsis thaliana (TAIR10)'
 
-  - Select in **Filters**: <GENE>, check <ID list limit> and upload your file containing the list of genes
+  - Select in **Filters**: 'GENE', check 'ID list limit' and upload your file containing the list of genes
 
-  - Select in **Attributes**: <Features>, and under **Gene Attributes**: <Gene stable ID>, <Gene name> and <Gene description>
+  - Select in **Attributes**: 'Features', and under **Gene Attributes**: 'Gene stable ID', 'Gene name' and 'Gene description'
 
-  - Get the results by clicking on the <Results> box in the upper left corner of the screen
+  - Get the results by clicking on the 'Results' box in the upper left corner of the screen
 
   - Note that you can modify **Attributes** by clicking on the box **Attributes** in the left panel
 
@@ -136,33 +126,35 @@ Remember that each BioMart query consists of 4 steps:
 
   - Modify **Attributes** by clicking on the box **Attributes** in the left panel
 
-  - Unfold <ORTHOLOGS> and select in **Brassica oleracea Orthologs**: <gene stable ID>, <Homology type>, <% identity> and <Orthology confidence>  
+  - Unfold 'ORTHOLOGS' and select in **Brassica oleracea Orthologs**: 'gene stable ID', 'Homology type', '% identity' and 'Orthology confidence'  
 
-  - Hit the <Results> box to get the results
+  - Hit the 'Results' box to get the results
 
 3. Download the sequences of all promoter sequences for gene list 
 
-  - Under **Atributes** select <Sequence>
-XXX
+  - Under **Atributes** select 'Sequence'
 
-4. Retrieve all the known sequence variants leading to frameshifts for a gene list
+  ...
 
-XXX  - Modify the **Filters** by clicking on the **Attributes** in the left panel
+4. Retrieve known SNPs for a list of genes leading to frameshifts
 
-  - Unfold <VARIATION> at the bottom, under <Variation type> select <frameshift_variant>
+  - Modify the **Filters** by clicking on the **Attributes** in the left panel
 
-  - Under **Attributes** select <Variation> and then under <GERMLINE VARIATION INFORMATION>:
-    <Reference ID>, <Source>, <Distance to transcript>, <Consequence type>, <Consequence specific allele>, <SIFT prediction>  
+  - Unfold 'VARIATION' at the bottom, under 'Variation type' select 'frameshift_variant'
+
+  - Under **Attributes** select 'Variation' and then under 'GERMLINE VARIATION INFORMATION':
+    'Reference ID', 'Source', 'Distance to transcript', 'Consequence type', 'Consequence specific allele', 'SIFT prediction'  
   
 5. Explore the possibilities of BioMart
   There are many more possibilites to annotate genes and retrieve features/sequences. 
   E.g. under **Filters**  you can filter genes according to their genomic location, protein domains, Gene Ontology description, microarray probes... 
   
-  You can also access BioMart/ensembl from R using the "biomaRt" package
+  You can also access BioMart/ensembl from R using the `biomaRt` package
 
 
 ## Further tutorials / coursebooks
 
 - [Browsing Bacterial Genomes with Ensembl](http://pedagogix-tagc.univ-mrs.fr/allbio/teaching_material/ensembl_material/Ensembl%20Bacteria%20Coursebook.pdf)
 
-- [Recent Presentations and Worked examples](ftp://ftp.sanger.ac.uk/pub/resources/coursesandconferences/)
+- Recent Presentations and Worked examples  
+  ftp://ftp.sanger.ac.uk/pub/resources/coursesandconferences/
