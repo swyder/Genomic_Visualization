@@ -2,7 +2,7 @@
 ### URPP Evolution in Action
 ![URPP logo](Logo_URPP_kl2.png)
 
-Stefan Wyder & Heidi Lischer
+Stefan Wyder & Heidi Tschanz-Lischer
 
 stefan.wyder@uzh.ch  
 heidi.lischer@ieu.uzh.ch
@@ -17,11 +17,12 @@ Topic             | Software | Person
 Genome browsers | Ensembl project, BioMart, UCSC | Stefan
 Genome viewers | IGV & co | Heidi
 Visualization in a circular layout | circos, OmicCircos | Heidi
+R packages for genome-wide visualization | Stefan
   
   
 Heidi's material: [Presentation](URPP_Tutorial_GenomicVisual_HL.pdf) | [Exercises](Exercises_GenomicVisualiz_HL.pdf)  
   
-Stefan's [presentation](URPP_Tutorial_GenomicVisual_SW.pdf) | [Exercises](Exercises_ensembl.md) 
+Stefan's [presentation](URPP_Tutorial_GenomicVisual_SW.pdf) | [Exercises ensembl](Exercises_ensembl.md) | [Interesting R/Bioconductor packages](Rpackages.md) 
   
   
   
