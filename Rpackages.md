@@ -13,16 +13,16 @@ https://bernatgel.github.io/karyoploter_tutorial/
 - requires R version >= 3.4
 
 ![KaryoploteR](Example_KaryoploteR_multipleData.png)
-https://bernatgel.github.io/karyoploter_tutorial//Examples/MultipleDataTypes/MultipleDataTypes.html
+(Code: https://bernatgel.github.io/karyoploter_tutorial/Examples/MultipleDataTypes/MultipleDataTypes.html)
 
 #### Many different types of plots
-kpPlotBAMDensity   kpPlotGenes        kpPlotMarkers      kpPlotRegions
-kpPlotCoverage     kpPlotLinks        kpPlotNames        kpPlotRibbon
-kpPlotDensity      kpPlotLoess        kpPlotRainfall     kpPlotTranscripts  
+kpPlotBAMDensity   kpPlotGenes        kpPlotMarkers      kpPlotRegions  
+kpPlotCoverage     kpPlotLinks        kpPlotNames        kpPlotRibbon  
+kpPlotDensity      kpPlotLoess        kpPlotRainfall     kpPlotTranscripts    
 
 
 #### Installation
-source("https://bioconductor.org/biocLite.R")
+source("https://bioconductor.org/biocLite.R")  
 biocLite("karyoploteR")
 
 
@@ -37,10 +37,9 @@ more examples:
 https://www.bioconductor.org/packages/release/bioc/vignettes/IdeoViz/inst/doc/Vignette.pdf
 
 
-#### Installation
-## try http:// if https:// URLs are not supported
-source("https://bioconductor.org/biocLite.R")
-biocLite("IdeoViz")
+#### Installation
+source("https://bioconductor.org/biocLite.R")  
+biocLite("IdeoViz")  
 
 ----------------------------------------------
 
@@ -52,10 +51,10 @@ https://bioconductor.org/packages/release/bioc/html/ggbio.html
 - not under active development
 
 More examples   
-- example http://www.tengfei.name/ggbio/docs/man/layout_karyogram-method.html  
+- http://www.tengfei.name/ggbio/docs/man/layout_karyogram-method.html  
 - http://www.sthda.com/english/wiki/ggbio-visualize-genomic-data  
 - http://rstudio-pubs-static.s3.amazonaws.com/9418_48ced8100f784734be7541bdda5da402.html#/20  
 
-### Installation
-source("http://www.bioconductor.org/biocLite.R")
-biocLite("ggbio")
+#### Installation  
+source("http://www.bioconductor.org/biocLite.R")  
+biocLite("ggbio")  
